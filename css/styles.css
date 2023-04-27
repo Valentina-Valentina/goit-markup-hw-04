@@ -4,7 +4,7 @@
   --accent-color: rgba(77, 90, 229, 1);
   --prima-white-color: rgb(255, 255, 255);
   --secondary-color: rgb(244, 244, 253);
-  --title-bg-color: rgba(46, 47, 66, 1);
+  --bg-color: rgba(46, 47, 66, 1);
   --btn-bg-color: rgb(64, 75, 191);
   --secondary-btn-bg-color: rgb(231, 233, 252);
 }
@@ -34,6 +34,7 @@ ol {
 img {
   display: block;
 }
+
 
 .list {
   list-style: none;
@@ -170,8 +171,15 @@ img {
 .hero {
   display: flex;
   height: 590.57px;
-  background-color: var(--title-bg-color);
   padding: 188px 0;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hw-04/hero/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--bg-color);
 }
 
 .hero-title {
@@ -184,7 +192,6 @@ img {
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
-  background: var(--title-text-color);
 }
 
 .modal-btn {
@@ -222,7 +229,6 @@ img {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-  /*background-color: var(--prima-white-color);*/
 }
 
 .goal {
@@ -292,6 +298,7 @@ img {
 }
 
 .team-card-wrapper {
+  width: 264px;
   padding-top: 32px;
   padding-left: 16px;
   padding-bottom: 32px;
@@ -311,7 +318,7 @@ img {
 .page-footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--title-bg-color);
+  background-color: var(--bg-color);
 }
 
 .footer-menu-logo {
