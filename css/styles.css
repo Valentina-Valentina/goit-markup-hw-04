@@ -369,6 +369,8 @@ img {
 }
 
 .customers-icon {
+  width: 104px;
+  height: 56px;
   fill: var(--icon-logo-color);
 }
 
