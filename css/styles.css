@@ -9,6 +9,7 @@
   --secondary-btn-bg-color: rgb(232, 234, 252);
   --icon-color: rgb(244, 244, 253);
   --shadow-color: rgba(46, 47, 66, 0.7);
+  --icon-logo-color: rgb(142, 143, 153);
 }
 
 body {
@@ -74,6 +75,28 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   color: var(--title-text-color);
+
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-icon {
+  fill: var(--icon-color);
+}
+
+
+.social-list-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
 }
 
 /* Main*/
@@ -126,9 +149,6 @@ img {
 .menu-item:not(:last-child) {
   margin-right: 40px;
 }
-
-.menu-item {}
-
 
 .menu-link {
   display: block;
@@ -336,33 +356,9 @@ img {
   color: var(--prima-text-color);
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-.social-list-item {
-  width: calc();
-}
-
-.social-list-icon {
-  fill: var(--icon-color);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: aqua;
-}
-
-.social-list-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--accent-color);
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--btn-bg-color);
 }
 
 /*-- Customers section --*/
@@ -372,12 +368,38 @@ img {
   gap: 24px;
 }
 
-.customers-icon {}
+.customers-icon {
+  fill: var(--icon-logo-color);
+}
+
+.customers-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--btn-bg-color);
+}
+
+.customers-container:hover .customers-list-item,
+.customers-container:focus .customers-list-item {
+  border-color: var(--btn-bg-color)
+}
 
 /*-- Footer --*/
 .page-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 156px;
   background-color: var(--bg-color);
 }
 
@@ -417,7 +439,35 @@ img {
   color: var(--secondary-color);
 }
 
-.page-footer-container {}
+.page-footer-container {
+  display: inline-block;
+  margin-right: 123px;
+}
+
+.footer-list {
+  gap: 16px;
+}
+
+.wrapper-container {
+  display: block;
+  align-items: center;
+  width: 208px;
+}
+
+.text-social {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--prima-white-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31D0AA;
+}
 
 /*-- Portfolio --*/
 
@@ -489,4 +539,12 @@ img {
   padding: 32px 16px;
   border: 1px solid var(--secondary-btn-bg-color);
   border-top: none;
+}
+
+
+.products-link:hover .content-card-wrapper,
+.products-link:focus .content-card-wrapper {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
