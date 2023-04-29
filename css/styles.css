@@ -408,8 +408,8 @@ img {
 }
 
 .customers-list-item>.icon-link {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .icon-link:hover,
