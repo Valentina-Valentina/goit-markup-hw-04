@@ -371,8 +371,6 @@ img {
 }
 
 .customers-icon {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 
 }
@@ -401,22 +399,25 @@ img {
 
 .icon-link {
   display: flex;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  color: var(--border-color);
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--border-color);
+
 }
 
 .customers-icon:hover,
 .customers-icon:focus {
+
   fill: var(--icon-hover-color);
 }
 
 .icon-link:hover,
 .icon-link:focus {
+
   border-color: var(--icon-hover-color)
 }
 
