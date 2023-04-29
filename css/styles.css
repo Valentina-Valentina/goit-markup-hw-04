@@ -398,7 +398,7 @@ img {
 }
 
 .icon-link {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
