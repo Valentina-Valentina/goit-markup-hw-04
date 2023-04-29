@@ -399,14 +399,17 @@ img {
 
 .icon-link {
   display: flex;
-  height: 100%;
-  width: 100%;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   color: var(--border-color);
 
+}
+
+.customers-list-item>.icon-link {
+  height: 100%;
+  width: 100%;
 }
 
 .icon-link:hover,
