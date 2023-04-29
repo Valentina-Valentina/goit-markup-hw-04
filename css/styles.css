@@ -374,6 +374,8 @@ img {
   fill: var(--icon-logo-color);
 }
 
+.customers-title {}
+
 .customers-list-item {
   display: flex;
   align-items: center;
@@ -395,6 +397,12 @@ img {
 }
 
 /*-- Footer --*/
+.footer-container-content {
+  display: flex;
+  align-items: baseline;
+
+}
+
 .page-footer {
   display: flex;
   flex-direction: row;
@@ -524,6 +532,7 @@ img {
 }
 
 .products-images {
+  display: block;
   border-top: none;
   width: calc((100% - 48px) / 3);
 }
