@@ -368,6 +368,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+
 }
 
 .customers-icon {
@@ -388,11 +389,10 @@ img {
 
 .customers-list-item {
   width: calc((100% - 120px) / 6);
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
-  height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
 }
@@ -409,16 +409,14 @@ img {
 
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-
-  fill: var(--icon-hover-color);
+.icon-link:hover,
+.icon-link:focus {
+  border-color: var(--icon-hover-color)
 }
 
 .icon-link:hover,
 .icon-link:focus {
-
-  border-color: var(--icon-hover-color)
+  color: var(--icon-hover-color)
 }
 
 /*-- Footer --*/
