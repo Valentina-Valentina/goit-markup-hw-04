@@ -11,6 +11,7 @@
   --shadow-color: rgba(46, 47, 66, 0.7);
   --icon-logo-color: rgb(142, 143, 153);
   --border-color: rgb(142, 143, 153);
+  --icon-hover-color: rgb(64, 75, 191);
 }
 
 body {
@@ -375,6 +376,7 @@ img {
 }
 
 .customers-title {
+  margin-bottom: 32px;
   font-size: 36px;
   line-height: 40px;
   line-height: 1.1;
@@ -388,18 +390,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
 }
 
-.customers-link {
+.icon-link {
   width: 100%;
-  height: 100;
+  height: 100%;
+  display: flex;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: var(--border-color);
@@ -408,12 +410,13 @@ img {
 
 .customers-icon:hover,
 .customers-icon:focus {
-  fill: var(--btn-bg-color);
+  fill: var(--icon-hover-color);
+
 }
 
-.customers-container:hover .customers-list-item,
-.customers-container:focus .customers-list-item {
-  border-color: var(--btn-bg-color)
+.icon-link:hover,
+.icon-link:focus {
+  border-color: var(--icon-hover-color)
 }
 
 /*-- Footer --*/
@@ -471,7 +474,7 @@ img {
 
 .page-footer-container {
   display: inline-block;
-  gap: 120px;
+  margin-right: 120px;
 }
 
 .footer-list {
@@ -541,6 +544,13 @@ img {
   color: var(--prima-white-color);
 }
 
+.filters-button:hover,
+.filters-button:focus,
+.filters-button:active {
+  box-shadow: зі значенням 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -573,6 +583,9 @@ img {
   border-top: none;
 }
 
+.products-link {
+  display: block;
+}
 
 .products-link:hover .content-card-wrapper,
 .products-link:focus .content-card-wrapper {
